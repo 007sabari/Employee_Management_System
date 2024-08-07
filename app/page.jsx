@@ -26,7 +26,7 @@ export default function Home() {
           straightforward.
         </p>
         <p className="my-4 text-base md:text-lg mx-auto lg:mt-[5%]">
-          Click "Welcome"button to login
+          Click "Welcome" button to login
         </p>
         <Link
           href="/login"
