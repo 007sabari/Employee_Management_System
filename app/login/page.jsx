@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import loginImage from "../../public/image1.jpg";
+import loginImage from "../../public/image14.jpg";
 
 const Login = () => {
   return (
@@ -30,6 +30,7 @@ const Login = () => {
             </label>
             <input
               type="text"
+              required
               id="username"
               placeholder="Type Your Username..."
               className="mt-1 block w-full border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-0 transition duration-300 ease-in-out px-2 py-1 placeholder-gray-500 rounded-md py-2"
@@ -45,6 +46,7 @@ const Login = () => {
             </label>
             <input
               type="password"
+              required
               id="password"
               placeholder="Type Your Password..."
               className="mt-1 block w-full border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-0 transition duration-300 ease-in-out px-2 py-1 placeholder-gray-500 rounded-md py-2"

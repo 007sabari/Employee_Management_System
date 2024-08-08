@@ -104,22 +104,22 @@ const TeamLeaderDashboard = () => {
           <table className="min-w-full divide-y divide-gray-300 hover:table-fixed">
             <thead className="table-auto sticky top-0 bg-gray-200">
               <tr>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6">
+                <th className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6 text-center">
                   Member Name
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6">
+                <th className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6 text-center">
                   Task Name
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6">
+                <th className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6 text-center">
                   Description
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6">
+                <th className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6 text-center">
                   Start Date
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6">
+                <th className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6 text-center">
                   End Date
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6">
+                <th className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6 text-center">
                   Assigned by
                 </th>
               </tr>
@@ -127,22 +127,22 @@ const TeamLeaderDashboard = () => {
             <tbody className="bg-white divide-y divide-gray-200">
               {tasks.map((task) => (
                 <tr key={task.id}>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6 text-center">
                     {task.Employee_name}
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6 text-center">
                     {task.name}
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6 text-center">
                     {task.description}
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6 text-center">
                     {task.startDate}
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6 text-center">
                     {task.endDate}
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6 text-center">
                     {task.Assigned_by}
                   </td>
                 </tr>

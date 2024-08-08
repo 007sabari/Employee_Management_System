@@ -2,19 +2,25 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ManagerDashboardImage from "../../public/image13.jpg";
+
 const ManagerDashboard = () => {
   const table = [
-    { tasks: "Empty", responsible: "Empty", status: "Empty" },
-    { tasks: "Empty", responsible: "Empty", status: "Empty" },
-    { tasks: "Empty", responsible: "Empty", status: "Empty" },
-    { tasks: "Empty", responsible: "Empty", status: "Empty" },
-    { tasks: "Empty", responsible: "Empty", status: "Empty" },
-    { tasks: "Empty", responsible: "Empty", status: "Empty" },
-    { tasks: "Empty", responsible: "Empty", status: "Empty" },
-    { tasks: "Empty", responsible: "Empty", status: "Empty" },
-    { tasks: "Empty", responsible: "Empty", status: "Empty" },
-    { tasks: "Empty", responsible: "Empty", status: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
+    { tasks: "Empty", responsible: "Empty", status: "Empty", enddate: "Empty" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +44,7 @@ const ManagerDashboard = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 md:px-6 lg:px-8   sm:max-w-screen-md rounded-xl p-2 ]">
+    <div className="container mx-auto px-4 md:px-6 lg:px-8   sm:max-w-screen-md rounded-xl p-5">
       <h1 className="text-blue-800  text-center mx-auto rounded-xl w-full sm:w-[96%] font-black font-sans text-2xl">
         Task Management Status
       </h1>
@@ -112,28 +118,34 @@ const ManagerDashboard = () => {
           <table className="min-w-full divide-y divide-gray-300">
             <thead className="table-auto sticky top-0 bg-gray-200">
               <tr>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6">
+                <th className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6 text-center">
                   Tasks
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6">
+                <th className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6 text-center">
                   Responsible
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6">
+                <th className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6 text-center">
                   Status
+                </th>
+                <th className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider sm:px-6 text-center">
+                  End Date
                 </th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
               {table.map((data, index) => (
                 <tr key={index}>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6 text-center">
                     {data.tasks}
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6 text-center">
                     {data.responsible}
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6 text-center">
                     {data.status}
+                  </td>
+                  <td className="px-4 py-4 whitespace-nowrap text-sm sm:px-6 text-center">
+                    {data.enddate}
                   </td>
                 </tr>
               ))}
@@ -141,15 +153,15 @@ const ManagerDashboard = () => {
           </table>
         </div>
       </div>
-        <div className="hidden lg:block  bg-no-repeat bg-right lg:h-screen bg-cover lg:w-[50%]">
-          <Image
-            src={ManagerDashboardImage}
-            alt="Login"
-            width={0}
-            height={0}
-            className="rounded-xl"
-          />
-        </div>
+      <div className="hidden lg:block  bg-no-repeat bg-right lg:h-screen bg-cover lg:w-[50%]">
+        <Image
+          src={""}
+          alt="Login"
+          width={0}
+          height={0}
+          className="rounded-xl"
+        />
+      </div>
     </div>
   );
 };
